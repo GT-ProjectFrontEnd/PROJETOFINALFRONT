@@ -44,9 +44,9 @@ function carousel() {
     function moveCarousel() {
         carouselItems.forEach((item, index) => {
             if (index === currentItem) {
-                item.style.transform = translateX(${carouselWidth },);
+                item.style.transform = translateX(`${carouselWidth },`);
             } else {
-                item.style.transform = translateX(${carouselWidth , (index - 1)},);
+                item.style.transform = translateX(`${carouselWidth , (index - 1)},`);
             }
         });
      }

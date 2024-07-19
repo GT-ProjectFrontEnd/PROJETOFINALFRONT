@@ -8,6 +8,8 @@ filters.forEach((filter) => {
             const marca = product.querySelector('.marca').textContent;
             const categoria = product.querySelector('.categoria').textContent;
             const genero = product.querySelector('.genero').textContent;
-            const estado = product.querySelector('.estado').}
-       ) }} )
-    
+            const estado = product.querySelector('.estado')
+        }
+        )
+    })
+})

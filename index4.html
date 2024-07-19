@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="./CSS/style4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- <a href="#" class="logo"> -->
+                ► Digital Store
+            </a>
+            <nav>
+                <input type="text" placeholder="Tênis" class="search">
+                <ul>
+                    <!-- <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Produtos</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Meus Pedidos</a></li> -->
+                </ul>
+            </nav>
+            <div class="actions">
+                <!-- <a href="#" class="btn">Cadastre-se</a>
+                <a href="#" class="btn">Entrar</a>
+                <a href="#" class="cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                    </svg>
+                    <span class="cart-count">0</span> -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Meu Carrinho</h2>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <!-- <img src="tenisimagem" alt="Tênis Nike Revolution 6 Next Nature Masculino"> -->
+                        <div class="cart-item-info">
+                            <h3>Tênis Nike Revolution 6 Next Nature Masculino</h3>
+                            <p>Cor: Vermelho / Branco</p>
+                            <p>Tamanho: 42</p>
+                        </div>
+                        <div class="cart-item-actions">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1" class="quantity">
+                            <button class="increase">+</button>
+                            <span class="price">R$ 219,00</span>
+                            <button class="remove-item">Remover Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Resumo</h3>
+                    <ul>
+                        <li>Subtotal: <span id="subtotal">R$ 0,00</span></li>
+                        <li>Frete: <span id="frete">R$ 0,00</span></li>
+                        <li>Desconto: <span id="desconto">R$ 30,00</span></li>
+                        <li>Total: <span id="total" class="blink">R$ 219,00</span></li>
+                    </ul>
+                    <div class="coupon">
+                        <h4>Cupom de desconto</h4>
+                        <input type="text" placeholder="Insira seu código" class="coupon-code">
+                        <button class="btn">OK</button>
+                    </div>
+                    <div class="shipping">
+                        <h4>Calcular frete</h4>
+                        <input type="text" placeholder="Insira seu CEP" class="shipping-cep">
+                        <button class="btn">OK</button>
+                    </div>
+                    <button class="btn" id="continue">Continuar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="container">
+                <h2>Produtos Relacionados</h2>
+                <div class="products">
+                    <div class="product">
+                        <div class="discount">30% OFF</div>
+                         <!-- <img src="tenisimagem" alt="Tênis Nike Revolution 6 Next Nature Masculino"> -->
+                        <h3>Tênis</h3>
+                        <h4>K-Swiss V8 - Masculino</h4>
+                        <p><s>R$ 200</s> <span>R$ 100</span></p>
+                    </div>
+                    <div class="product">
+                         <!-- <img src="tenisimagem" alt="Tênis Nike Revolution 6 Next Nature Masculino"> -->
+                        <h3>Tênis</h3>
+                        <h4>K-Swiss V8 - Masculino</h4>
+                        <p><s>R$ 200</s> <span>R$ 100</span></p>
+                    </div>
+                    <div class="product">
+                         <!-- <img src="tenisimagem" alt="Tênis Nike Revolution 6 Next Nature Masculino"> -->
+                        <h3>Tênis</h3>
+                        <h4>K-Swiss V8 - Masculino</h4>
+                        <p><s>R$ 200</s> <span>R$ 100</span></p>
+                    </div>
+                    <div class="product">
+                         <!-- <img src="tenisimagem" alt="Tênis Nike Revolution 6 Next Nature Masculino"> -->
+                        <h3>Tênis</h3>
+                        <h4>K-Swiss V8 - Masculino</h4>
+                        <p><s>R$ 200</s> <span>R$ 100</span></p>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn">Ver todos →</a> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <!-- <a href="logo" class="logo"> -->
+                    ► Digital Store
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <ul class="social-media">
+                    <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>  links para as páginas reais -->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Informação</h3>
+                <ul>
+                    <!-- <li><a href="#">Sobre Drip Store</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Meus Pedidos</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categorias</h3>
+                <ul>
+                    <!-- <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Calças</a></li>
+                    <li><a href="#">Bonés</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Tênis</a></li> -->
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</li>
+                    <li>(85) 3051-3411</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Digital College</p>
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
